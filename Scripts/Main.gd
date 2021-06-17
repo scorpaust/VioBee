@@ -14,11 +14,16 @@ var lifes = 3
 
 var gameover = false
 
+<<<<<<< HEAD
 signal damaged
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_node("BackgroundMusic").play()
+=======
+# Called when the node enters the scene tree for the first time.
+func _ready():
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
 	pass # Replace with function body.
 
 
@@ -48,9 +53,12 @@ func _on_Timer_Flower_timeout():
 
 func _on_Area_Bee_area_entered(area):
 	if area.name == "Area_Spider":
+<<<<<<< HEAD
 		
 		emit_signal("damaged")
 		
+=======
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
 		if (lifes == 3):
 			lifes -= 1
 			get_node("Bar/3").hide()
@@ -61,6 +69,7 @@ func _on_Area_Bee_area_entered(area):
 			
 		elif (lifes == 1):
 			lifes -= 1
+<<<<<<< HEAD
 			gameover = true
 			get_node("BackgroundMusic").stop()
 			get_node("Bar/3").hide()
@@ -73,6 +82,18 @@ func _on_Area_Bee_area_entered(area):
 		pts += 1
 		get_node("PickupSFX").play()
 		get_node("Bar/Score").text = str(pts)
+=======
+			get_node("Bar/3").hide()
+			gameover = true
+			get_node("Bee").queue_free()
+			get_node("GameOver").show()
+			get_node("Restart").start()
+		
+		
+	if area.name == "Area_Flower":
+		pts += 1
+		get_node("Bar/ScoreLabelText").text = str(pts)
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
 		area.get_parent().queue_free()
 
 

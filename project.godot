@@ -16,7 +16,10 @@ _global_script_class_icons={
 [application]
 
 config/name="VioBeeDev"
+<<<<<<< HEAD
 config/description="A simple game where a violet bee tries to avoid spiders and needs to catch some flowers to increase its score. "
+=======
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
@@ -31,7 +34,10 @@ RestHandler="*res://addons/github-integration/scripts/RestHandler.gd"
 window/size/width=720
 window/size/height=1280
 window/size/resizable=false
+<<<<<<< HEAD
 window/size/fullscreen=true
+=======
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"

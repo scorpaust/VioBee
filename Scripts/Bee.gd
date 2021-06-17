@@ -17,6 +17,7 @@ func _process(delta):
 	
 	translate(Vector2(x, y))	
 	pass
+<<<<<<< HEAD
 	
 
 func _on_Main_damaged():
@@ -26,3 +27,5 @@ func _on_Main_damaged():
 		self.modulate.a = 1.0
 		yield(get_tree(), "idle_frame")
 
+=======
+>>>>>>> 3e64c8f45548f165ec484c7d5ba14b4828c6cb8b
